@@ -1,6 +1,6 @@
 # 👁️ Facial Keypoints Detection using CNN
 
-This project detects 30 facial keypoints from grayscale face images using a custom Convolutional Neural Network (CNN) built with TensorFlow and Keras.
+This project predicts **30 facial keypoints** (e.g., eyes, nose, mouth corners) from grayscale face images using a custom **Convolutional Neural Network (CNN)** built with TensorFlow and Keras.
 
 ---
 
@@ -15,20 +15,28 @@ facial-keypoints-detection/
 ├── requirements.txt
 ├── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🧠 Tools & Technologies
 
-- TensorFlow / Keras
-- Python, Pandas, NumPy
-- Matplotlib, Seaborn
-- OpenCV (optional)
+- **TensorFlow / Keras** — Deep learning framework  
+- **Python**, **Pandas**, **NumPy** — Data handling  
+- **Matplotlib**, **Seaborn** — Visualization  
+- **OpenCV** (optional) — Image processing
+
 
 ---
+
+## ✅ Model Performance
+
+- **Root Mean Squared Error (RMSE)**: `0.0230`  
+- **Mean Absolute Error (MAE)**: `0.0163`  
+- **Training Data**: 2,140 labeled 96x96 grayscale images  
+- **Model**: Custom CNN with augmentation and early stopping  
+- **Result**: Robust keypoint detection with strong generalization
+
+---
+
 
 ## ✅ Results
 
@@ -39,29 +47,38 @@ Edit
 
 ---
 
-## 📷 Visual Outputs
+## 📸 Visual Outputs (from `gallery/`)
 
-- `predicted_vs_actual_keypoints.png`
-- `cnn_architecture_diagram.png`
-- `face_grid_keypoints_comparison.png`
-- `submission_file_preview.png`
-- `training_validation_rmse_curve.png`
-
----
+| Visual | Description |
+|--------|-------------|
+| `predicted_vs_actual_keypoints.png` | Comparison of predicted vs true landmarks |
+| `cnn_architecture_diagram.png` | Model layer flow |
+| `face_grid_keypoints_comparison.png` | Sample grid of predicted faces |
+| `submission_file_preview.png` | Kaggle-style CSV preview |
+| `training_validation_rmse_curve.png` | Training vs validation loss graph |
 
 ## 📂 Deliverables
 
-- 6-stage Jupyter notebook pipeline
-- Trained model (.h5)
-- Final CSV prediction submission
-- Visual gallery & PDF summary
+- ✅ 6-stage Jupyter notebook pipeline  
+- ✅ Trained model file (`cnn_model.h5`)  
+- ✅ Final CSV predictions (`submission/final_submission.csv`)  
+- ✅ Visual outputs gallery  
+- ✅ 📄 [PDF summary report](./report/project_summary.pdf)
+
 
 ---
 
 ## 🧠 Conclusion
 
-A CNN-powered facial landmark detection pipeline demonstrating deep learning proficiency. Suitable for AR, biometric, and healthcare applications.
+This project demonstrates a full **deep learning pipeline for facial landmark detection**, showcasing:
+- Custom CNN architecture
+- Data augmentation and tuning
+- Visual analysis of predictions
+
+👉 Applicable in **biometrics, AR/VR, facial analysis, and healthcare** use cases.
 
 ---
 
-> “AI doesn’t just recognize faces — it understands the points that make us human.” 
+> _“AI doesn’t just recognize faces — it understands the points that make us human.”_
+
+---
